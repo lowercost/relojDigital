@@ -1,0 +1,109 @@
+*{
+    background-color: black;
+}
+
+.reloj { /*Contenedor para todo el reloj*/
+    display: flex; /*Convierte el elemento contenedor en un contenedor flexible, lo que permite controlar la distribución y el alineamiento de sus elementos secundarios.*/
+    align-items: center; /*Centra los elementos secundarios verticalmente dentro del contenedor flexible.*/
+    justify-content: center; /*Centra los elementos secundarios horizontalmente dentro del contenedor flexible.*/
+    /*border: 1px solid white;*/
+}
+
+.digito {
+    position: relative; /* Establecer posición relativa para los segmentos absolutos */
+    width: 80px; /* Ancho del contenedor de cada digito */
+    height: 135px; /* Altura del contenedor de cada digito */
+    /*border: 1px solid #ccc;*/ /* Añadir un borde para visualización */
+}
+
+/* Estilo para el número 8 */
+.superior,
+.inferior,
+.medio
+{
+    background-color: red; /* Color de fondo que representa el segmento encendido */
+    position: absolute; /* Establecer la posición absoluta */
+    width: 35px; /* Ancho del segmento */
+    height: 15px; /* Altura del segmento */
+    border-radius: 10px;
+    /*border: 1px solid white;*/
+}
+
+.superior_derecha,
+.superior_izquierda,
+.inferior-derecha,
+.inferior_izquierda
+{
+    background-color: red; /* Color de fondo que representa el segmento encendido */
+    position: absolute; /* Establecer la posición absoluta */
+    width: 15px; /* Ancho del segmento */
+    height: 35px; /* Altura del segmento */
+    border-radius: 10px;
+    /*border: 1px solid white;*/
+}
+
+    /*Posiciones de cada segmento de digito*/
+
+.superior {
+    bottom: 110px; /* Posición arriba */
+    left: 20px; /* Posición a la mitad del contenedor */
+}
+
+.superior_derecha {
+    bottom: 75px; /* Posición arriba */
+    left: 55px; /* Posición a la derecha */
+}
+
+.superior_izquierda {
+    bottom: 75px; /* Posición arriba */
+    left: 5px; /* Posición a la izquierda */
+}
+
+.medio {
+    bottom: 60px;
+    left: 20px;
+}
+
+.inferior {
+    bottom: 10px; /* Posición abajo */
+    left: 20px; /* Posición a la mitad del contenedor */
+}
+
+.inferior-derecha {
+    bottom: 25px; /* Posición abajo */
+    left: 55px; /* Posición a la derecha */
+}
+
+.inferior_izquierda {
+    bottom: 25px; /* Posición abajo */
+    left: 5px; /* Posición a la izquierda */
+}
+
+/*  Dos Puntos  */
+
+.dos_puntos{
+    position: relative;
+    width:  45px; 
+    height: 135px;
+    /*border: 1px solid #ccc;*/
+}
+
+.puntos
+{
+    background-color: red;
+    position: absolute;
+    width: 20px;
+    height: 25px;
+    border-radius: 10px;
+    /*border: 1px solid white;*/
+}
+
+#punto_superior {
+    bottom: 75px; /* Posición arriba */
+    left: 10px; /* Posición a la izquierda */
+}
+
+#punto_inferior {
+    bottom: 25px;
+    left: 10px;
+}
