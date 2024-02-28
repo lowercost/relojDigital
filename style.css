@@ -21,7 +21,7 @@
 .inferior,
 .medio
 {
-    background-color: red; /* Color de fondo que representa el segmento encendido */
+    background-color: #080808; /* Color de fondo que representa el segmento encendido */
     position: absolute; /* Establecer la posición absoluta */
     width: 35px; /* Ancho del segmento */
     height: 15px; /* Altura del segmento */
@@ -34,7 +34,7 @@
 .inferior-derecha,
 .inferior_izquierda
 {
-    background-color: red; /* Color de fondo que representa el segmento encendido */
+    background-color: #080808; /* Color de fondo que representa el segmento encendido */
     position: absolute; /* Establecer la posición absoluta */
     width: 15px; /* Ancho del segmento */
     height: 35px; /* Altura del segmento */
